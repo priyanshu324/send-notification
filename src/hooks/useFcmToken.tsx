@@ -1,4 +1,5 @@
 "use client";
+// eslint-disable-next-line react-hooks/exhaustive-deps
 
 import { useEffect, useRef, useState } from "react";
 import { onMessage, Unsubscribe } from "firebase/messaging";
@@ -87,7 +88,7 @@ const useFcmToken = () => {
     if ("Notification" in window) {
       loadToken();
     }
-  }, []);
+  }, [loadToken]);
 
   useEffect(() => {
     const setupListener = async () => {
