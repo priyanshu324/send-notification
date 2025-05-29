@@ -25,6 +25,29 @@ export async function POST(request: NextRequest) {
         link,
       },
     },
+    android: {
+      notification: {
+        title,
+        body: message,
+        clickAction: link || undefined,
+      },
+    },
+
+    // apns: {
+    //   payload: {
+    //     aps: {
+    //       alert: {
+    //         title,
+    //         body: message,
+    //       },
+    //       sound: "default",
+    //       category: "NEW_MESSAGE",
+    //     },
+    //   },
+    //   fcmOptions: {
+    //     link,
+    //   },
+    // },
   };
 
   try {
