@@ -13,7 +13,7 @@
 
 # testing
 /coverage
-
+eslint.config.mjs
 service_key.json
 
 # next.js
